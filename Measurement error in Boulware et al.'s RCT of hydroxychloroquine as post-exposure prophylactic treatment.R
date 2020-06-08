@@ -75,6 +75,7 @@ ggplot(results, aes(x = effect * 100)) +
   geom_vline(aes(xintercept = mean_effect * 100, linetype = "moe"), color = "red", size = 1) +
   geom_vline(aes(xintercept = (prob_infection_base - prob_infection_treatment) * 100, linetype = "re"), color = "purple", size = 1) +
   theme_minimal() +
+  ggtitle("Distribution of observed effect sizes in simulation of Boulware et al.'s RCT of hydroxychloroquine as post-exposure prophylactic treatment") +
   ylab("Density") +
   xlab("Observed effect size") +
   scale_linetype_manual(
@@ -103,3 +104,5 @@ ggplot(results, aes(x = effect * 100)) +
     width = 12,
     height = 6
   )
+
+print(paste0("Power = ", sum(results$significant) / length(results$significant) * 100, "%"))
