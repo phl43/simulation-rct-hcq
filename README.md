@@ -1,2 +1,2 @@
 # simulation-rct-hcq
-Une simulation que j'ai faite à la va-vite pour estimer la puissance statistique de la RCT sur l'effet prophylactique de l'hydroxychloroquine publiée dans la NEJM (https://www.nejm.org/doi/full/10.1056/NEJMoa2016638) quand on tient compte de l'erreur de mesure due à l'absence de tests PCR dans la plupart des cas.
+A quick and dirty simulation I wrote to estimate the statistical power of the study on hydroxychloroquine as post-exposure prophylaxis that was published in the New England Journal of Medecine (https://www.nejm.org/doi/full/10.1056/NEJMoa2016638) when taking into account measurement error due to the fact that most participants were not tested by PCR.
